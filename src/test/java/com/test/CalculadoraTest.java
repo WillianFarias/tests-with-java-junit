@@ -19,7 +19,7 @@ public class CalculadoraTest {
 	public void testeSomarComMock() {
 		Calculadora calculadora = mock(Calculadora.class);
 		
-		when(calculadora.somar("1.2")).thenReturn(10);
+		when(calculadora.somar("1+2")).thenReturn(10);
 		
 		int resultado = calculadora.somar("1+2");
 		
