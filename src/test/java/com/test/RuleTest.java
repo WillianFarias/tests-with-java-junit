@@ -47,8 +47,7 @@ public class RuleTest {
 			new ArrayList<Object>().get(0);
 			fail("Esperado que IndexOutOfBoundsException seja lançada");
 		} catch (IndexOutOfBoundsException ex) {
-			assertThat(ex.getMessage(),  is("Index: 0, Size: 0"));
+			assertEquals(ex.getMessage(), ("Index: 0, Size: 0"));
 		}
 	}
-
 }
